@@ -12,7 +12,9 @@ package matematikav;
         
 public class MatematikaVcanggihberaksi {
      public static void main(String[] args) {
+
         MatematikaVcanggih mtk = new MatematikaVcanggih();
+        
         System.out.println("\n======Pertambahan=======");
         mtk.pertambahan(12.5, 28.7, 14.2);
         mtk.pertambahan(12, 28, 14);
@@ -43,5 +45,8 @@ public class MatematikaVcanggihberaksi {
         mtk.modulus(23, 34);
         mtk.modulus(3.4, 4.9);
 
+        // uji method tambahan kalkulasi
+        System.out.println("\nHasil Operasi Gabungan : " + mtk.operasiGabungan(10, 5, 2) );
+        
     }
 }

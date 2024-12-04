@@ -10,75 +10,91 @@ package matematikav;
  */
 public class MatematikaV {
 
-   void pertambahan(double a ,double b , double c){
-        double hasil = a + b + c;
-        System.out.println("Hasil pertambahan : " + hasil);
-    }
-    void pertambahan(int a ,int b , int c){
-        int hasil = a + b + c;
-        System.out.println("Hasil pertambahan : " + hasil);
-    }
-    void pertambahan(int a ,int b){
-        int hasil = a + b;
-        System.out.println("Hasil pertambahan : " + hasil);
-    }
-    void pertambahan(double a ,double b){
-        double hasil = a + b ;
-        System.out.println("Hasil pertambahan : " + hasil);
+    int hasilInt;
+    double hasilDouble;
+
+    //  overload pertambahan
+    void pertambahan(double a, double b, double c) {
+        hasilDouble = a + b + c;
+        System.out.printf("Hasil pertambahan: %.1f%n", hasilDouble);
     }
 
-
-    void pengurangan(double a ,double b , double c){
-        double hasil = a - b - c;
-        System.out.println("Hasil pengurangan : " + hasil);
-    }
-    void pengurangan(int a ,int b , int c){
-        int hasil = a - b - c;
-        System.out.println("Hasil pengurangan : " + hasil);
-    }
-    void pengurangan(int a ,int b){
-        int hasil = a - b;
-        System.out.println("Hasil pengurangan : " + hasil);
-    }
-    void pengurangan(double a ,double b){
-        double hasil = a - b ;
-        System.out.println("Hasil pengurangan : " + hasil);
+    void pertambahan(int a, int b, int c) {
+        hasilInt = a + b + c;
+        System.out.println("Hasil pertambahan : " + hasilInt);
     }
 
-
-    void perkalian(double a ,double b , double c){
-        double hasil = a * b * c;
-        System.out.println("Hasil perkalian : " + hasil);
-    }
-    void perkalian(int a ,int b , int c){
-        int hasil = a * b * c;
-        System.out.println("Hasil perkalian : " + hasil);
-    }
-    void perkalian(int a ,int b){
-        int hasil = a * b;
-        System.out.println("Hasil perkalian : " + hasil);
-    }
-    void perkalian(double a ,double b){
-        double hasil = a * b ;
-        System.out.println("Hasil perkalian : " + hasil);
+    void pertambahan(int a, int b) {
+        hasilInt = a + b;
+        System.out.println("Hasil pertambahan : " + hasilInt);
     }
 
+    void pertambahan(double a, double b) {
+        hasilDouble = a + b;
+        System.out.printf("Hasil pertambahan: %.1f%n", hasilDouble);
+    }
 
-    void pembagian(double a ,double b , double c){
-        double hasil = a / b / c;
-        System.out.println("Hasil pembagian : " + hasil);
+    //  overload pengurangan
+    void pengurangan(double a, double b, double c) {
+        hasilDouble = a - b - c;
+        System.out.println("Hasil pengurangan : " + hasilDouble);
     }
-    void pembagian(int a ,int b , int c){
-        int hasil = a / b / c;
-        System.out.println("Hasil pembagian : " + hasil);
+
+    void pengurangan(int a, int b, int c) {
+        hasilInt = a - b - c;
+        System.out.println("Hasil pengurangan : " + hasilInt);
     }
-    void pembagian(int a ,int b){
-        int hasil = a / b;
-        System.out.println("Hasil pembagian : " + hasil);
+
+    void pengurangan(int a, int b) {
+        hasilInt = a - b;
+        System.out.println("Hasil pengurangan : " + hasilInt);
     }
-    void pembagian(double a ,double b){
-        double hasil = a / b ;
-        System.out.println("Hasil pembagian : " + hasil);
+
+    void pengurangan(double a, double b) {
+        hasilDouble = a - b;
+        System.out.printf("Hasil pengurangan: %.1f%n", hasilDouble);
+    }
+
+        //  overload perkalian
+    void perkalian(double a, double b, double c) {
+        hasilDouble = a * b * c;
+        System.out.println("Hasil perkalian : " + hasilDouble);
+    }
+
+    void perkalian(int a, int b, int c) {
+        hasilInt = a * b * c;
+        System.out.println("Hasil perkalian : " + hasilInt);
+    }
+
+    void perkalian(int a, int b) {
+        hasilInt = a * b;
+        System.out.println("Hasil perkalian : " + hasilInt);
+    }
+
+    void perkalian(double a, double b) {
+        hasilDouble = a * b;
+        System.out.println("Hasil perkalian : " + hasilDouble);
+    }
+
+        //  overload pembagian
+    void pembagian(double a, double b, double c) {
+        hasilDouble = a / b / c;
+        System.out.printf("Hasil pertambahan: %.11f%n", hasilDouble);
+    }
+
+    void pembagian(int a, int b, int c) {
+        hasilInt = a / b / c;
+        System.out.println("Hasil pembagian : " + hasilInt);
+    }
+
+    void pembagian(int a, int b) {
+        hasilInt = a / b;
+        System.out.println("Hasil pembagian : " + hasilInt);
+    }
+
+    void pembagian(double a, double b) {
+        hasilDouble = a / b;
+        System.out.printf("Hasil pertambahan: %.11f%n", hasilDouble);
     }
 
 }
